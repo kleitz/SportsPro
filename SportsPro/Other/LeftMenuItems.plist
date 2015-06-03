@@ -7,14 +7,20 @@
 		<string>约运动</string>
 		<key>menuIcon</key>
 		<string>xx.png</string>
+		<key>nibName</key>
+		<string>Arrange</string>
 	</dict>
 	<dict>
+		<key>nibName</key>
+		<string>Plan</string>
 		<key>menuTitle</key>
 		<string>个人计划</string>
 		<key>menuIcon</key>
 		<string>xx.png</string>
 	</dict>
 	<dict>
+		<key>nibName</key>
+		<string>Info</string>
 		<key>menuTitle</key>
 		<string>个人信息</string>
 		<key>menuIcon</key>
@@ -23,12 +29,16 @@
 	<dict>
 		<key>menuTitle</key>
 		<string>运动社区</string>
+		<key>nibName</key>
+		<string>Community</string>
 		<key>menuIcon</key>
 		<string>xx.png</string>
 	</dict>
 	<dict>
 		<key>menuTitle</key>
-		<string>退出登录</string>
+		<string>更多</string>
+		<key>nibName</key>
+		<string>More</string>
 		<key>menuIcon</key>
 		<string>xx.png</string>
 	</dict>

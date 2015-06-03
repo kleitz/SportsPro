@@ -110,9 +110,18 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     
-    [self.sideMenuViewController hideMenuViewController];
+//    [self.sideMenuViewController hideMenuViewController];
     
 //    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    
+    SPLeftItem *item = self.itemArray[indexPath.row];
+    
+    
+    
+    [self.sideMenuViewController setContentViewController:[[UIStoryboard storyboardWithName:item.nibName bundle:nil]instantiateViewControllerWithIdentifier:@"SPNavigationController"] animated:YES];
+    
+    [self.sideMenuViewController hideMenuViewController];
+    
     /*
     switch (indexPath.row) {
         case 0:

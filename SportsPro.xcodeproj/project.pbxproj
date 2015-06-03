@@ -9,12 +9,16 @@
 /* Begin PBXBuildFile section */
 		510031AF1B1F2D7D003BC9DE /* LeftMenuItems.plist in Resources */ = {isa = PBXBuildFile; fileRef = 510031AE1B1F2D7D003BC9DE /* LeftMenuItems.plist */; };
 		510031B21B1F2FB4003BC9DE /* SPLeftTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 510031B11B1F2FB4003BC9DE /* SPLeftTableView.m */; };
+		510031B41B1F415A003BC9DE /* Info.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 510031B31B1F4159003BC9DE /* Info.storyboard */; };
+		510031B61B1F41A1003BC9DE /* Plan.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 510031B51B1F41A1003BC9DE /* Plan.storyboard */; };
+		510031B81B1F41DB003BC9DE /* Community.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 510031B71B1F41DB003BC9DE /* Community.storyboard */; };
+		510031BE1B1F4373003BC9DE /* More.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 510031BD1B1F4373003BC9DE /* More.storyboard */; };
 		511E745F1B1EEF2C00E7D6A7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 511E74591B1EEF2C00E7D6A7 /* AppDelegate.m */; };
 		511E74621B1EEF7E00E7D6A7 /* SPRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 511E74611B1EEF7E00E7D6A7 /* SPRootViewController.m */; };
 		511E74651B1EF06600E7D6A7 /* SRLeftViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 511E74641B1EF06600E7D6A7 /* SRLeftViewController.m */; };
 		511E74681B1EF07B00E7D6A7 /* SPRightViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 511E74671B1EF07B00E7D6A7 /* SPRightViewController.m */; };
 		511E746E1B1EF64900E7D6A7 /* SPLeftItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 511E746D1B1EF64900E7D6A7 /* SPLeftItem.m */; };
-		511E74701B1EF7A700E7D6A7 /* ArrangeStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 511E746F1B1EF7A700E7D6A7 /* ArrangeStoryboard.storyboard */; };
+		511E74701B1EF7A700E7D6A7 /* Arrange.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 511E746F1B1EF7A700E7D6A7 /* Arrange.storyboard */; };
 		511E74731B1EF8FA00E7D6A7 /* SPArrangeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 511E74721B1EF8FA00E7D6A7 /* SPArrangeViewController.m */; };
 		511E74761B1EFABB00E7D6A7 /* SPNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 511E74751B1EFABB00E7D6A7 /* SPNavigationController.m */; };
 		51E3A6EE1B1D88CB00644562 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 51E3A6ED1B1D88CB00644562 /* main.m */; };
@@ -39,6 +43,10 @@
 		510031AE1B1F2D7D003BC9DE /* LeftMenuItems.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = LeftMenuItems.plist; sourceTree = "<group>"; };
 		510031B01B1F2FB4003BC9DE /* SPLeftTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPLeftTableView.h; sourceTree = "<group>"; };
 		510031B11B1F2FB4003BC9DE /* SPLeftTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPLeftTableView.m; sourceTree = "<group>"; };
+		510031B31B1F4159003BC9DE /* Info.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Info.storyboard; sourceTree = "<group>"; };
+		510031B51B1F41A1003BC9DE /* Plan.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Plan.storyboard; sourceTree = "<group>"; };
+		510031B71B1F41DB003BC9DE /* Community.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Community.storyboard; sourceTree = "<group>"; };
+		510031BD1B1F4373003BC9DE /* More.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = More.storyboard; sourceTree = "<group>"; };
 		511E74581B1EEF2C00E7D6A7 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		511E74591B1EEF2C00E7D6A7 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		511E74601B1EEF7E00E7D6A7 /* SPRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPRootViewController.h; sourceTree = "<group>"; };
@@ -49,7 +57,7 @@
 		511E74671B1EF07B00E7D6A7 /* SPRightViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPRightViewController.m; sourceTree = "<group>"; };
 		511E746C1B1EF64900E7D6A7 /* SPLeftItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPLeftItem.h; sourceTree = "<group>"; };
 		511E746D1B1EF64900E7D6A7 /* SPLeftItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPLeftItem.m; sourceTree = "<group>"; };
-		511E746F1B1EF7A700E7D6A7 /* ArrangeStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ArrangeStoryboard.storyboard; sourceTree = "<group>"; };
+		511E746F1B1EF7A700E7D6A7 /* Arrange.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Arrange.storyboard; sourceTree = "<group>"; };
 		511E74711B1EF8FA00E7D6A7 /* SPArrangeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPArrangeViewController.h; sourceTree = "<group>"; };
 		511E74721B1EF8FA00E7D6A7 /* SPArrangeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPArrangeViewController.m; sourceTree = "<group>"; };
 		511E74741B1EFABB00E7D6A7 /* SPNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPNavigationController.h; sourceTree = "<group>"; };
@@ -87,13 +95,45 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		510031B91B1F4360003BC9DE /* More */ = {
+			isa = PBXGroup;
+			children = (
+				510031BA1B1F4360003BC9DE /* Model */,
+				510031BB1B1F4360003BC9DE /* View */,
+				510031BC1B1F4360003BC9DE /* ViewController */,
+				510031BD1B1F4373003BC9DE /* More.storyboard */,
+			);
+			path = More;
+			sourceTree = "<group>";
+		};
+		510031BA1B1F4360003BC9DE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		510031BB1B1F4360003BC9DE /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		510031BC1B1F4360003BC9DE /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
 		511E74421B1EEF2C00E7D6A7 /* Arrange */ = {
 			isa = PBXGroup;
 			children = (
 				511E74431B1EEF2C00E7D6A7 /* Model */,
 				511E74441B1EEF2C00E7D6A7 /* View */,
 				511E74451B1EEF2C00E7D6A7 /* ViewController */,
-				511E746F1B1EF7A700E7D6A7 /* ArrangeStoryboard.storyboard */,
+				511E746F1B1EF7A700E7D6A7 /* Arrange.storyboard */,
 			);
 			path = Arrange;
 			sourceTree = "<group>";
@@ -171,6 +211,7 @@
 				511E744B1B1EEF2C00E7D6A7 /* Model */,
 				511E744C1B1EEF2C00E7D6A7 /* View */,
 				511E744D1B1EEF2C00E7D6A7 /* ViewController */,
+				510031B71B1F41DB003BC9DE /* Community.storyboard */,
 			);
 			path = Community;
 			sourceTree = "<group>";
@@ -202,6 +243,7 @@
 				511E744F1B1EEF2C00E7D6A7 /* Model */,
 				511E74501B1EEF2C00E7D6A7 /* View */,
 				511E74511B1EEF2C00E7D6A7 /* ViewController */,
+				510031B31B1F4159003BC9DE /* Info.storyboard */,
 			);
 			path = Info;
 			sourceTree = "<group>";
@@ -281,6 +323,7 @@
 				511E745B1B1EEF2C00E7D6A7 /* Model */,
 				511E745C1B1EEF2C00E7D6A7 /* View */,
 				511E745D1B1EEF2C00E7D6A7 /* ViewController */,
+				510031B51B1F41A1003BC9DE /* Plan.storyboard */,
 			);
 			path = Plan;
 			sourceTree = "<group>";
@@ -340,9 +383,10 @@
 				511E74421B1EEF2C00E7D6A7 /* Arrange */,
 				511E744A1B1EEF2C00E7D6A7 /* Community */,
 				511E744E1B1EEF2C00E7D6A7 /* Info */,
-				511E74531B1EEF2C00E7D6A7 /* LogIn */,
 				511E745A1B1EEF2C00E7D6A7 /* Plan */,
+				510031B91B1F4360003BC9DE /* More */,
 				511E745E1B1EEF2C00E7D6A7 /* Tool */,
+				511E74531B1EEF2C00E7D6A7 /* LogIn */,
 				511E74571B1EEF2C00E7D6A7 /* Other */,
 				511E74521B1EEF2C00E7D6A7 /* Libs */,
 				51E3A6F81B1D88CC00644562 /* Images.xcassets */,
@@ -477,7 +521,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				511E74701B1EF7A700E7D6A7 /* ArrangeStoryboard.storyboard in Resources */,
+				510031B81B1F41DB003BC9DE /* Community.storyboard in Resources */,
+				510031BE1B1F4373003BC9DE /* More.storyboard in Resources */,
+				510031B41B1F415A003BC9DE /* Info.storyboard in Resources */,
+				511E74701B1EF7A700E7D6A7 /* Arrange.storyboard in Resources */,
+				510031B61B1F41A1003BC9DE /* Plan.storyboard in Resources */,
 				51E3A6F71B1D88CC00644562 /* Main.storyboard in Resources */,
 				51E3A6FC1B1D88CC00644562 /* LaunchScreen.xib in Resources */,
 				510031AF1B1F2D7D003BC9DE /* LeftMenuItems.plist in Resources */,

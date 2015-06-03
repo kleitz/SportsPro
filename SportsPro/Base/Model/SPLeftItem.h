@@ -14,6 +14,8 @@
 
 @property(copy,nonatomic)NSString *menuIcon;
 
+@property(copy,nonatomic)NSString *nibName;
+
 + (instancetype)leftItemWithDictionary:(NSDictionary *)dic;
 
 - (instancetype)initItemWithDictionary: (NSDictionary *)dic;
