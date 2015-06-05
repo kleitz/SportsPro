@@ -13,6 +13,7 @@
 		510031B61B1F41A1003BC9DE /* Plan.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 510031B51B1F41A1003BC9DE /* Plan.storyboard */; };
 		510031B81B1F41DB003BC9DE /* Community.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 510031B71B1F41DB003BC9DE /* Community.storyboard */; };
 		510031BE1B1F4373003BC9DE /* More.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 510031BD1B1F4373003BC9DE /* More.storyboard */; };
+		510CFDB31B21CC320084E443 /* SPTitleSegement.m in Sources */ = {isa = PBXBuildFile; fileRef = 510CFDB21B21CC320084E443 /* SPTitleSegement.m */; };
 		511E745F1B1EEF2C00E7D6A7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 511E74591B1EEF2C00E7D6A7 /* AppDelegate.m */; };
 		511E74621B1EEF7E00E7D6A7 /* SPRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 511E74611B1EEF7E00E7D6A7 /* SPRootViewController.m */; };
 		511E74651B1EF06600E7D6A7 /* SRLeftViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 511E74641B1EF06600E7D6A7 /* SRLeftViewController.m */; };
@@ -21,6 +22,7 @@
 		511E74701B1EF7A700E7D6A7 /* Arrange.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 511E746F1B1EF7A700E7D6A7 /* Arrange.storyboard */; };
 		511E74731B1EF8FA00E7D6A7 /* SPArrangeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 511E74721B1EF8FA00E7D6A7 /* SPArrangeViewController.m */; };
 		511E74761B1EFABB00E7D6A7 /* SPNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 511E74751B1EFABB00E7D6A7 /* SPNavigationController.m */; };
+		513009251B208EEB006AFCFC /* MessageTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 513009241B208EEB006AFCFC /* MessageTableViewController.m */; };
 		51E3A6EE1B1D88CB00644562 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 51E3A6ED1B1D88CB00644562 /* main.m */; };
 		51E3A6F71B1D88CC00644562 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51E3A6F51B1D88CC00644562 /* Main.storyboard */; };
 		51E3A6F91B1D88CC00644562 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 51E3A6F81B1D88CC00644562 /* Images.xcassets */; };
@@ -47,6 +49,8 @@
 		510031B51B1F41A1003BC9DE /* Plan.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Plan.storyboard; sourceTree = "<group>"; };
 		510031B71B1F41DB003BC9DE /* Community.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Community.storyboard; sourceTree = "<group>"; };
 		510031BD1B1F4373003BC9DE /* More.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = More.storyboard; sourceTree = "<group>"; };
+		510CFDB11B21CC320084E443 /* SPTitleSegement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPTitleSegement.h; sourceTree = "<group>"; };
+		510CFDB21B21CC320084E443 /* SPTitleSegement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPTitleSegement.m; sourceTree = "<group>"; };
 		511E74581B1EEF2C00E7D6A7 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		511E74591B1EEF2C00E7D6A7 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		511E74601B1EEF7E00E7D6A7 /* SPRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPRootViewController.h; sourceTree = "<group>"; };
@@ -62,6 +66,8 @@
 		511E74721B1EF8FA00E7D6A7 /* SPArrangeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPArrangeViewController.m; sourceTree = "<group>"; };
 		511E74741B1EFABB00E7D6A7 /* SPNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPNavigationController.h; sourceTree = "<group>"; };
 		511E74751B1EFABB00E7D6A7 /* SPNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPNavigationController.m; sourceTree = "<group>"; };
+		513009231B208EEB006AFCFC /* MessageTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageTableViewController.h; sourceTree = "<group>"; };
+		513009241B208EEB006AFCFC /* MessageTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageTableViewController.m; sourceTree = "<group>"; };
 		51E3A6E81B1D88CB00644562 /* SportsPro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SportsPro.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		51E3A6EC1B1D88CB00644562 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		51E3A6ED1B1D88CB00644562 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -148,6 +154,8 @@
 		511E74441B1EEF2C00E7D6A7 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				510CFDB11B21CC320084E443 /* SPTitleSegement.h */,
+				510CFDB21B21CC320084E443 /* SPTitleSegement.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -356,6 +364,39 @@
 			path = Tool;
 			sourceTree = "<group>";
 		};
+		5130091F1B208E6C006AFCFC /* Message */ = {
+			isa = PBXGroup;
+			children = (
+				513009201B208E6C006AFCFC /* Model */,
+				513009211B208E6C006AFCFC /* View */,
+				513009221B208E6C006AFCFC /* ViewController */,
+			);
+			path = Message;
+			sourceTree = "<group>";
+		};
+		513009201B208E6C006AFCFC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		513009211B208E6C006AFCFC /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		513009221B208E6C006AFCFC /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				513009231B208EEB006AFCFC /* MessageTableViewController.h */,
+				513009241B208EEB006AFCFC /* MessageTableViewController.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
 		51E3A6DF1B1D88CB00644562 = {
 			isa = PBXGroup;
 			children = (
@@ -385,6 +426,7 @@
 				511E744E1B1EEF2C00E7D6A7 /* Info */,
 				511E745A1B1EEF2C00E7D6A7 /* Plan */,
 				510031B91B1F4360003BC9DE /* More */,
+				5130091F1B208E6C006AFCFC /* Message */,
 				511E745E1B1EEF2C00E7D6A7 /* Tool */,
 				511E74531B1EEF2C00E7D6A7 /* LogIn */,
 				511E74571B1EEF2C00E7D6A7 /* Other */,
@@ -580,7 +622,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				510CFDB31B21CC320084E443 /* SPTitleSegement.m in Sources */,
 				511E746E1B1EF64900E7D6A7 /* SPLeftItem.m in Sources */,
+				513009251B208EEB006AFCFC /* MessageTableViewController.m in Sources */,
 				510031B21B1F2FB4003BC9DE /* SPLeftTableView.m in Sources */,
 				511E74651B1EF06600E7D6A7 /* SRLeftViewController.m in Sources */,
 				511E74761B1EFABB00E7D6A7 /* SPNavigationController.m in Sources */,

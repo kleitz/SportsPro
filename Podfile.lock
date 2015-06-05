@@ -1,10 +1,16 @@
 PODS:
+  - iCarousel (1.8.1)
+  - NYSegmentedControl (1.0.5)
   - RESideMenu (4.0.7)
 
 DEPENDENCIES:
+  - iCarousel (~> 1.8.1)
+  - NYSegmentedControl (~> 1.0.5)
   - RESideMenu (~> 4.0.7)
 
 SPEC CHECKSUMS:
+  iCarousel: dace1cb858e3f4dc2614bee3201041247f82feda
+  NYSegmentedControl: 6c0dd98de6814a4e294c772ce4ad8bffecc480db
   RESideMenu: f24c508404b49c667344c54aba7e590883533958
 
 COCOAPODS: 0.36.3

@@ -27,7 +27,12 @@
     self.contentViewController = [[UIStoryboard storyboardWithName:@"ArrangeStoryboard" bundle:nil]instantiateViewControllerWithIdentifier:@"SPNavigationController"];
     
     self.leftMenuViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"SRLeftViewController"];
-    self.rightMenuViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"SPRightViewController"];
+    
+    self.rightMenuViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"SPNavigationController"];
+    
+//    self.rightMenuViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"SPRightViewController"];
+    
+    
     //    self.backgroundImage = [UIImage imageNamed:@"Stars"];
     
     self.view.backgroundColor = [UIColor grayColor];

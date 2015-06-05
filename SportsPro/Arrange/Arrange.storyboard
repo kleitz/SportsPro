@@ -18,7 +18,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gIZ-ge-AaQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-28" y="243"/>
+            <point key="canvasLocation" x="-427" y="226"/>
         </scene>
         <!--SPArrangeViewController-->
         <scene sceneID="jsi-b5-iX5">
@@ -37,7 +37,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kEc-3i-V9f" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="581" y="226"/>
+            <point key="canvasLocation" x="193" y="238"/>
         </scene>
     </scenes>
 </document>

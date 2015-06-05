@@ -19,12 +19,11 @@
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    
-    
-    
-    [[UINavigationBar appearance] setBarTintColor:[UIColor colorWithRed:255/255.0 green:128/255.0 blue:45/255.0 alpha:1.0]];
+
+    [[UINavigationBar appearance]setBackgroundImage:[UIImage imageNamed:@"nav-bar-orange"] forBarMetrics:UIBarMetricsDefault];
     
     return YES;
+    
     
 }
 
