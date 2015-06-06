@@ -20,7 +20,7 @@
 
 + (SPTitleSegement *)titleSegement {
 
-    SPTitleSegement *title = [[SPTitleSegement alloc] initWithItems:@[@"地图约", @"列表约"]];
+    SPTitleSegement *title = [[SPTitleSegement alloc] initWithItems:@[ @"列表约",@"地图约"]];
     
     title.titleTextColor =  [UIColor whiteColor];
     

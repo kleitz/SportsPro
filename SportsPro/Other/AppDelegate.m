@@ -22,8 +22,10 @@
 
     [[UINavigationBar appearance]setBackgroundImage:[UIImage imageNamed:@"nav-bar-orange"] forBarMetrics:UIBarMetricsDefault];
     
-    return YES;
+    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent animated:NO];
+
     
+    return YES;
     
 }
 

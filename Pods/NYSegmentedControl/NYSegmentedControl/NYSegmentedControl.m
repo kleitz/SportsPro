@@ -76,7 +76,6 @@
     // We need to directly access the ivars for UIAppearance properties in the initializer
     _titleFont = [UIFont systemFontOfSize:13.0f];
     _titleTextColor = [UIColor blackColor];
-    #warning !!!!---fix
     _selectedTitleFont = [UIFont boldSystemFontOfSize:17.0f];
     _selectedTitleTextColor = [UIColor blackColor];
     _stylesTitleForSelectedSegment = YES;

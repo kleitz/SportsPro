@@ -24,7 +24,7 @@
      */
 //    self.contentViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"SPContentViewController"];
     
-    self.contentViewController = [[UIStoryboard storyboardWithName:@"ArrangeStoryboard" bundle:nil]instantiateViewControllerWithIdentifier:@"SPNavigationController"];
+    self.contentViewController = [[UIStoryboard storyboardWithName:@"Arrange" bundle:nil]instantiateViewControllerWithIdentifier:@"SPNavigationController"];
     
     self.leftMenuViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"SRLeftViewController"];
     

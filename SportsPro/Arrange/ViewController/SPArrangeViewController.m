@@ -13,6 +13,16 @@
 
 @property(nonatomic,strong)SPTitleSegement *titleSegement;
 
+@property(nonatomic,weak)IBOutlet UIView *ContainerView;
+
+@property(nonatomic,weak)IBOutlet UIView *toolView;
+
+@property(nonatomic,weak)IBOutlet UITextField *searchView;
+
+@property(nonatomic,weak)IBOutlet UIButton *dateButton;
+
+@property(nonatomic,weak)IBOutlet UIButton *searchButton;
+
 @end
 
 @implementation SPArrangeViewController
@@ -35,15 +45,14 @@
     
     self.navigationItem.title = nil;
     self.navigationItem.titleView = _titleSegement;
-    /**
-     *  add Constraints
-     */
-    
-    NSLog(@"%@",NSStringFromCGRect(self.navigationItem.titleView.frame));
-    
+
 }
 
-
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
+    
+    [self.searchView resignFirstResponder];
+    
+}
 /*
 #pragma mark - Navigation
 
@@ -61,6 +70,31 @@
     NYSegmentedControl *control = (NYSegmentedControl *)sender;
     
     NSLog(@"%lu",control.selectedSegmentIndex);
+    
+    /*
+    if (self.ContainerView.subviews) {
+        
+        for (UIView *view in self.ContainerView.subviews) {
+            
+            [view removeFromSuperview];
+        }
+    }
+     */
+    
+
+    if (control.selectedSegmentIndex == 1) {
+
+        UIView *view = [[UIView alloc]initWithFrame:self.ContainerView.frame];
+
+        view.backgroundColor = [UIColor yellowColor];
+        
+        [self.ContainerView addSubview:view];
+
+    }else {
+        
+        [self.ContainerView.subviews[0] removeFromSuperview];
+        
+    }
     
     /*
      UIView *exampleViewToShow = self.exampleViews[self.segmentedControl.selectedSegmentIndex];

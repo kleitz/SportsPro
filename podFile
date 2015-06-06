@@ -3,3 +3,5 @@ platform :ios, '8.0'
 pod 'RESideMenu', '~> 4.0.7'
 pod 'iCarousel', '~> 1.8.1'
 pod 'NYSegmentedControl', '~> 1.0.5'
+pod 'AMap2DMap' #2D地图SDK
+pod 'AMapSearch' #搜索服务SDK
