@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
     </dependencies>
@@ -28,15 +28,15 @@
                         <viewControllerLayoutGuide type="top" id="oxt-xo-W9O"/>
                         <viewControllerLayoutGuide type="bottom" id="hhd-nw-wHY"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="aO0-A5-1up">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="536"/>
+                    <view key="view" contentMode="scaleToFill" id="aO0-A5-1up" userLabel="MainView">
+                        <rect key="frame" x="0.0" y="64" width="600" height="536"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1fG-yG-k6o">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1fG-yG-k6o" userLabel="ContainerView">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="492"/>
                                 <color key="backgroundColor" red="0.78823529410000004" green="0.89019607840000003" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MJ4-IY-BGJ">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MJ4-IY-BGJ" userLabel="Toolbar">
                                 <rect key="frame" x="0.0" y="492" width="600" height="44"/>
                                 <subviews>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="h8B-iw-DjK">
@@ -83,24 +83,52 @@
                             <constraint firstAttribute="trailing" secondItem="1fG-yG-k6o" secondAttribute="trailing" id="BYN-Bj-Z0v"/>
                             <constraint firstAttribute="trailing" secondItem="MJ4-IY-BGJ" secondAttribute="trailing" id="RwI-G1-ifk"/>
                             <constraint firstItem="1fG-yG-k6o" firstAttribute="top" secondItem="oxt-xo-W9O" secondAttribute="bottom" id="U51-WO-gIj"/>
+                            <constraint firstItem="MJ4-IY-BGJ" firstAttribute="top" secondItem="1fG-yG-k6o" secondAttribute="bottom" id="YQz-bM-DeB"/>
                             <constraint firstItem="MJ4-IY-BGJ" firstAttribute="leading" secondItem="aO0-A5-1up" secondAttribute="leading" id="fsl-oE-fQ7"/>
                             <constraint firstItem="hhd-nw-wHY" firstAttribute="top" secondItem="MJ4-IY-BGJ" secondAttribute="bottom" id="qNg-Rl-KJ4"/>
                             <constraint firstItem="1fG-yG-k6o" firstAttribute="leading" secondItem="aO0-A5-1up" secondAttribute="leading" id="rln-TP-XlX"/>
-                            <constraint firstItem="hhd-nw-wHY" firstAttribute="top" secondItem="1fG-yG-k6o" secondAttribute="bottom" constant="44" id="tJh-So-ZRm"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="SPArrangeViewController" id="J7e-7A-vK3"/>
+                    <navigationItem key="navigationItem" title="SPArrangeViewController" id="J7e-7A-vK3">
+                        <barButtonItem key="leftBarButtonItem" style="plain" id="muA-yT-rZ5">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="LHH-LU-Pto">
+                                <rect key="frame" x="16" y="7" width="60" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.78823529410000004" green="0.89019607840000003" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="presentLeftMenuViewController:" destination="ucP-BG-lJk" eventType="touchUpInside" id="y5U-TY-EOI"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="6tZ-uH-M3D">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="dae-Vx-aHP">
+                                <rect key="frame" x="451" y="7" width="60" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.78823529410000004" green="0.89019607840000003" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="presentRightMenuViewController:" destination="ucP-BG-lJk" eventType="touchUpInside" id="TZW-Y2-YJ8"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="ContainerView" destination="1fG-yG-k6o" id="DLO-G0-zZD"/>
                         <outlet property="dateButton" destination="cKL-kf-oeI" id="S0X-dX-5FO"/>
                         <outlet property="searchButton" destination="BHC-73-Pcr" id="qaD-xh-fLX"/>
                         <outlet property="searchView" destination="h8B-iw-DjK" id="kGi-Q1-nmh"/>
+                        <outlet property="toolBarBottomConstraint" destination="qNg-Rl-KJ4" id="Hhg-zH-XHm"/>
                         <outlet property="toolView" destination="MJ4-IY-BGJ" id="Y9k-Cs-vlf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kEc-3i-V9f" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="407" y="35"/>
+            <point key="canvasLocation" x="392" y="286"/>
         </scene>
     </scenes>
 </document>

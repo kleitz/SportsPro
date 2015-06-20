@@ -23,6 +23,15 @@
 		511E74731B1EF8FA00E7D6A7 /* SPArrangeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 511E74721B1EF8FA00E7D6A7 /* SPArrangeViewController.m */; };
 		511E74761B1EFABB00E7D6A7 /* SPNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 511E74751B1EFABB00E7D6A7 /* SPNavigationController.m */; };
 		513009251B208EEB006AFCFC /* MessageTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 513009241B208EEB006AFCFC /* MessageTableViewController.m */; };
+		51704FA51B359A2600CCE8B4 /* SPArrangeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 51704FA41B359A2600CCE8B4 /* SPArrangeCell.m */; };
+		51704FA71B359A5200CCE8B4 /* SPArrangeCell_iphone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 51704FA61B359A5200CCE8B4 /* SPArrangeCell_iphone.xib */; };
+		51A1284A1B32A478001630D3 /* SPAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 51A128461B32A478001630D3 /* SPAnnotationView.m */; };
+		51A1284B1B32A478001630D3 /* SPCalloutView.m in Sources */ = {isa = PBXBuildFile; fileRef = 51A128481B32A478001630D3 /* SPCalloutView.m */; };
+		51A1284C1B32A478001630D3 /* SPCalloutView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 51A128491B32A478001630D3 /* SPCalloutView.xib */; };
+		51A128511B32A483001630D3 /* poi_icon_positioning@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 51A1284D1B32A483001630D3 /* poi_icon_positioning@2x.png */; };
+		51A128521B32A483001630D3 /* records.plist in Resources */ = {isa = PBXBuildFile; fileRef = 51A1284E1B32A483001630D3 /* records.plist */; };
+		51A128531B32A483001630D3 /* SPAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 51A128501B32A483001630D3 /* SPAnnotation.m */; };
+		51A128551B32A7D9001630D3 /* SportPoint@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 51A128541B32A7D9001630D3 /* SportPoint@2x.png */; };
 		51E3A6EE1B1D88CB00644562 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 51E3A6ED1B1D88CB00644562 /* main.m */; };
 		51E3A6F71B1D88CC00644562 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51E3A6F51B1D88CC00644562 /* Main.storyboard */; };
 		51E3A6F91B1D88CC00644562 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 51E3A6F81B1D88CC00644562 /* Images.xcassets */; };
@@ -68,6 +77,19 @@
 		511E74751B1EFABB00E7D6A7 /* SPNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPNavigationController.m; sourceTree = "<group>"; };
 		513009231B208EEB006AFCFC /* MessageTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageTableViewController.h; sourceTree = "<group>"; };
 		513009241B208EEB006AFCFC /* MessageTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageTableViewController.m; sourceTree = "<group>"; };
+		51704FA31B359A2600CCE8B4 /* SPArrangeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPArrangeCell.h; sourceTree = "<group>"; };
+		51704FA41B359A2600CCE8B4 /* SPArrangeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPArrangeCell.m; sourceTree = "<group>"; };
+		51704FA61B359A5200CCE8B4 /* SPArrangeCell_iphone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SPArrangeCell_iphone.xib; sourceTree = "<group>"; };
+		51A128451B32A478001630D3 /* SPAnnotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPAnnotationView.h; sourceTree = "<group>"; };
+		51A128461B32A478001630D3 /* SPAnnotationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPAnnotationView.m; sourceTree = "<group>"; };
+		51A128471B32A478001630D3 /* SPCalloutView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPCalloutView.h; sourceTree = "<group>"; };
+		51A128481B32A478001630D3 /* SPCalloutView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPCalloutView.m; sourceTree = "<group>"; };
+		51A128491B32A478001630D3 /* SPCalloutView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SPCalloutView.xib; sourceTree = "<group>"; };
+		51A1284D1B32A483001630D3 /* poi_icon_positioning@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "poi_icon_positioning@2x.png"; sourceTree = "<group>"; };
+		51A1284E1B32A483001630D3 /* records.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = records.plist; sourceTree = "<group>"; };
+		51A1284F1B32A483001630D3 /* SPAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPAnnotation.h; sourceTree = "<group>"; };
+		51A128501B32A483001630D3 /* SPAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPAnnotation.m; sourceTree = "<group>"; };
+		51A128541B32A7D9001630D3 /* SportPoint@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SportPoint@2x.png"; sourceTree = "<group>"; };
 		51E3A6E81B1D88CB00644562 /* SportsPro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SportsPro.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		51E3A6EC1B1D88CB00644562 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		51E3A6ED1B1D88CB00644562 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -147,6 +169,10 @@
 		511E74431B1EEF2C00E7D6A7 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				51A1284D1B32A483001630D3 /* poi_icon_positioning@2x.png */,
+				51A1284E1B32A483001630D3 /* records.plist */,
+				51A1284F1B32A483001630D3 /* SPAnnotation.h */,
+				51A128501B32A483001630D3 /* SPAnnotation.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -154,8 +180,16 @@
 		511E74441B1EEF2C00E7D6A7 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				51A128451B32A478001630D3 /* SPAnnotationView.h */,
+				51A128461B32A478001630D3 /* SPAnnotationView.m */,
+				51A128471B32A478001630D3 /* SPCalloutView.h */,
+				51A128481B32A478001630D3 /* SPCalloutView.m */,
+				51A128491B32A478001630D3 /* SPCalloutView.xib */,
 				510CFDB11B21CC320084E443 /* SPTitleSegement.h */,
 				510CFDB21B21CC320084E443 /* SPTitleSegement.m */,
+				51704FA31B359A2600CCE8B4 /* SPArrangeCell.h */,
+				51704FA41B359A2600CCE8B4 /* SPArrangeCell.m */,
+				51704FA61B359A5200CCE8B4 /* SPArrangeCell_iphone.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -280,6 +314,7 @@
 		511E74521B1EEF2C00E7D6A7 /* Libs */ = {
 			isa = PBXGroup;
 			children = (
+				51A128541B32A7D9001630D3 /* SportPoint@2x.png */,
 			);
 			path = Libs;
 			sourceTree = "<group>";
@@ -564,13 +599,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				510031B81B1F41DB003BC9DE /* Community.storyboard in Resources */,
+				51A128521B32A483001630D3 /* records.plist in Resources */,
+				51704FA71B359A5200CCE8B4 /* SPArrangeCell_iphone.xib in Resources */,
 				510031BE1B1F4373003BC9DE /* More.storyboard in Resources */,
 				510031B41B1F415A003BC9DE /* Info.storyboard in Resources */,
+				51A128511B32A483001630D3 /* poi_icon_positioning@2x.png in Resources */,
 				511E74701B1EF7A700E7D6A7 /* Arrange.storyboard in Resources */,
 				510031B61B1F41A1003BC9DE /* Plan.storyboard in Resources */,
 				51E3A6F71B1D88CC00644562 /* Main.storyboard in Resources */,
 				51E3A6FC1B1D88CC00644562 /* LaunchScreen.xib in Resources */,
 				510031AF1B1F2D7D003BC9DE /* LeftMenuItems.plist in Resources */,
+				51A1284C1B32A478001630D3 /* SPCalloutView.xib in Resources */,
+				51A128551B32A7D9001630D3 /* SportPoint@2x.png in Resources */,
 				51E3A6F91B1D88CC00644562 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -624,15 +664,19 @@
 			files = (
 				510CFDB31B21CC320084E443 /* SPTitleSegement.m in Sources */,
 				511E746E1B1EF64900E7D6A7 /* SPLeftItem.m in Sources */,
+				51A1284A1B32A478001630D3 /* SPAnnotationView.m in Sources */,
+				51A128531B32A483001630D3 /* SPAnnotation.m in Sources */,
 				513009251B208EEB006AFCFC /* MessageTableViewController.m in Sources */,
 				510031B21B1F2FB4003BC9DE /* SPLeftTableView.m in Sources */,
 				511E74651B1EF06600E7D6A7 /* SRLeftViewController.m in Sources */,
 				511E74761B1EFABB00E7D6A7 /* SPNavigationController.m in Sources */,
 				511E74681B1EF07B00E7D6A7 /* SPRightViewController.m in Sources */,
+				51A1284B1B32A478001630D3 /* SPCalloutView.m in Sources */,
 				511E74621B1EEF7E00E7D6A7 /* SPRootViewController.m in Sources */,
 				511E745F1B1EEF2C00E7D6A7 /* AppDelegate.m in Sources */,
 				511E74731B1EF8FA00E7D6A7 /* SPArrangeViewController.m in Sources */,
 				51E3A6EE1B1D88CB00644562 /* main.m in Sources */,
+				51704FA51B359A2600CCE8B4 /* SPArrangeCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -763,6 +807,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SportsPro/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -774,6 +819,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SportsPro/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

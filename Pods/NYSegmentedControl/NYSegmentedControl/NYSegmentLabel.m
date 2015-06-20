@@ -9,6 +9,14 @@
 
 #import "NYSegmentLabel.h"
 
+@interface NYSegmentLabel ()
+{
+    BOOL _needRelease;
+    
+}
+
+@end
+
 @implementation NYSegmentLabel
 
 - (void)setMaskFrame:(CGRect)maskFrame {
@@ -46,24 +54,34 @@
         CGContextSetFillColorWithColor(context, [self.alternativeTextColor CGColor]);
 
         // Path from mask
-        CGPathRef path = [self pathForRoundedRect:self.maskFrame radius:self.maskCornerRadius];
+        CGPathRef path = [self CreatePathForRoundedRect:self.maskFrame radius:self.maskCornerRadius];
+        
         CGContextAddPath(context, path);
-
+        
         // Fill the path
         CGContextFillPath(context);
 
         // Clean up
         CGContextRestoreGState(context);
         CGImageRelease(mask);
+
+
+        
     }
 }
 
-- (CGPathRef)pathForRoundedRect:(CGRect)rect radius:(CGFloat)radius {
+- (CGPathRef)CreatePathForRoundedRect:(CGRect)rect radius:(CGFloat)radius {
+    
     if (CGRectIsEmpty(rect)) {
-        return CGPathCreateMutable();
+        
+        _needRelease = YES;
+        CGMutablePathRef path = CGPathCreateMutable();
+        
+        return CFAutorelease(path);
     }
     
     UIBezierPath* path = [UIBezierPath bezierPathWithRoundedRect:rect cornerRadius:radius];
+    _needRelease = YES;
     return [path CGPath];
 }
 
