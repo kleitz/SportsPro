@@ -12,13 +12,21 @@
 
 - (void)awakeFromNib {
     // Initialization code
+
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
     [super setSelected:selected animated:animated];
 
-    // Configure the
-    view for the selected state
+    // Configure the view for the selected state
+    NSLog(@"%s",__func__);
+    
+    [self becomeFirstResponder];
+    
 }
 
+- (BOOL)canBecomeFirstResponder {
+    
+    return YES;
+}
 @end

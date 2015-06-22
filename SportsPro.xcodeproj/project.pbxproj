@@ -24,7 +24,7 @@
 		511E74761B1EFABB00E7D6A7 /* SPNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 511E74751B1EFABB00E7D6A7 /* SPNavigationController.m */; };
 		513009251B208EEB006AFCFC /* MessageTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 513009241B208EEB006AFCFC /* MessageTableViewController.m */; };
 		51704FA51B359A2600CCE8B4 /* SPArrangeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 51704FA41B359A2600CCE8B4 /* SPArrangeCell.m */; };
-		51704FA71B359A5200CCE8B4 /* SPArrangeCell_iphone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 51704FA61B359A5200CCE8B4 /* SPArrangeCell_iphone.xib */; };
+		51704FA71B359A5200CCE8B4 /* SPArrangCell_iphone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 51704FA61B359A5200CCE8B4 /* SPArrangCell_iphone.xib */; };
 		51A1284A1B32A478001630D3 /* SPAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 51A128461B32A478001630D3 /* SPAnnotationView.m */; };
 		51A1284B1B32A478001630D3 /* SPCalloutView.m in Sources */ = {isa = PBXBuildFile; fileRef = 51A128481B32A478001630D3 /* SPCalloutView.m */; };
 		51A1284C1B32A478001630D3 /* SPCalloutView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 51A128491B32A478001630D3 /* SPCalloutView.xib */; };
@@ -79,7 +79,7 @@
 		513009241B208EEB006AFCFC /* MessageTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageTableViewController.m; sourceTree = "<group>"; };
 		51704FA31B359A2600CCE8B4 /* SPArrangeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPArrangeCell.h; sourceTree = "<group>"; };
 		51704FA41B359A2600CCE8B4 /* SPArrangeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPArrangeCell.m; sourceTree = "<group>"; };
-		51704FA61B359A5200CCE8B4 /* SPArrangeCell_iphone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SPArrangeCell_iphone.xib; sourceTree = "<group>"; };
+		51704FA61B359A5200CCE8B4 /* SPArrangCell_iphone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SPArrangCell_iphone.xib; sourceTree = "<group>"; };
 		51A128451B32A478001630D3 /* SPAnnotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPAnnotationView.h; sourceTree = "<group>"; };
 		51A128461B32A478001630D3 /* SPAnnotationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPAnnotationView.m; sourceTree = "<group>"; };
 		51A128471B32A478001630D3 /* SPCalloutView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPCalloutView.h; sourceTree = "<group>"; };
@@ -189,7 +189,7 @@
 				510CFDB21B21CC320084E443 /* SPTitleSegement.m */,
 				51704FA31B359A2600CCE8B4 /* SPArrangeCell.h */,
 				51704FA41B359A2600CCE8B4 /* SPArrangeCell.m */,
-				51704FA61B359A5200CCE8B4 /* SPArrangeCell_iphone.xib */,
+				51704FA61B359A5200CCE8B4 /* SPArrangCell_iphone.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -600,7 +600,7 @@
 			files = (
 				510031B81B1F41DB003BC9DE /* Community.storyboard in Resources */,
 				51A128521B32A483001630D3 /* records.plist in Resources */,
-				51704FA71B359A5200CCE8B4 /* SPArrangeCell_iphone.xib in Resources */,
+				51704FA71B359A5200CCE8B4 /* SPArrangCell_iphone.xib in Resources */,
 				510031BE1B1F4373003BC9DE /* More.storyboard in Resources */,
 				510031B41B1F415A003BC9DE /* Info.storyboard in Resources */,
 				51A128511B32A483001630D3 /* poi_icon_positioning@2x.png in Resources */,

@@ -89,34 +89,7 @@
                             <constraint firstItem="1fG-yG-k6o" firstAttribute="leading" secondItem="aO0-A5-1up" secondAttribute="leading" id="rln-TP-XlX"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="SPArrangeViewController" id="J7e-7A-vK3">
-                        <barButtonItem key="leftBarButtonItem" style="plain" id="muA-yT-rZ5">
-                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="LHH-LU-Pto">
-                                <rect key="frame" x="16" y="7" width="60" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.78823529410000004" green="0.89019607840000003" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="Button">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="presentLeftMenuViewController:" destination="ucP-BG-lJk" eventType="touchUpInside" id="y5U-TY-EOI"/>
-                                </connections>
-                            </button>
-                        </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" style="plain" id="6tZ-uH-M3D">
-                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="dae-Vx-aHP">
-                                <rect key="frame" x="451" y="7" width="60" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.78823529410000004" green="0.89019607840000003" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="Button">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="presentRightMenuViewController:" destination="ucP-BG-lJk" eventType="touchUpInside" id="TZW-Y2-YJ8"/>
-                                </connections>
-                            </button>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="SPArrangeViewController" id="J7e-7A-vK3"/>
                     <connections>
                         <outlet property="ContainerView" destination="1fG-yG-k6o" id="DLO-G0-zZD"/>
                         <outlet property="dateButton" destination="cKL-kf-oeI" id="S0X-dX-5FO"/>
@@ -128,7 +101,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kEc-3i-V9f" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="392" y="286"/>
+            <point key="canvasLocation" x="618" y="280"/>
         </scene>
     </scenes>
 </document>

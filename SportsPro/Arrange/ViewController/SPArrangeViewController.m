@@ -13,6 +13,8 @@
 #import "SPAnnotationView.h"
 #import "SPAnnotation.h"
 #import <Masonry.h>
+#import "UIViewController+RESideMenu.h"
+
 
 #define WS(weakSelf)  __weak __typeof(&*self)weakSelf = self;
 
@@ -20,7 +22,6 @@ NSString* const AppKey = @"0e53206c7bebe6d6c7324f87e5718bbc";
 CGFloat const defaultSpanValue = .02;
 CGFloat const key = .002;
 CGFloat const keyboardDuration = .250000;
-//CGFloat const keyboardHeight = 224.0;
 
 @interface SPArrangeViewController ()<MAMapViewDelegate, UITextFieldDelegate, UITableViewDataSource, UITableViewDelegate>
 
@@ -57,6 +58,8 @@ CGFloat const keyboardDuration = .250000;
 
 }
 
+#pragma mark -
+#pragma mark View's Life Cycle
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
@@ -67,7 +70,10 @@ CGFloat const keyboardDuration = .250000;
     
     [self addNotification];
     
+    [self setupNavigationItems];
+    
     NSLog(@"%@",NSStringFromCGRect(self.ContainerView.bounds));
+
     
 }
 
@@ -78,6 +84,9 @@ CGFloat const keyboardDuration = .250000;
     [self segmentSelected:nil];
     
 }
+
+#pragma mark -
+#pragma mark Intialization Operation
 - (void)addNotification {
 
     [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(keyboardWillChangeFrameNotification:) name:UIKeyboardWillShowNotification object:nil];
@@ -95,17 +104,39 @@ CGFloat const keyboardDuration = .250000;
 
 }
 
+-(void)setupNavigationItems {
+
+    UIBarButtonItem *fixedItem = [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemFixedSpace target:nil action:nil];
+    fixedItem.width = -12;
+    
+    UIButton *leftItemButton = [[UIButton alloc]initWithFrame:CGRectMake(0, 0, 30, 30)];
+    [leftItemButton addTarget:self action:@selector(presentLeftMenuViewController:) forControlEvents:UIControlEventTouchDown];
+    leftItemButton.bounds = CGRectMake(0, 0, 30, 30);
+    leftItemButton.backgroundColor = [UIColor yellowColor];
+    UIBarButtonItem *leftBarItem = [[UIBarButtonItem alloc]initWithCustomView:leftItemButton];
+    
+    UIButton *rightItemButton = [[UIButton alloc]initWithFrame:CGRectMake(0, 0, 30, 30)];
+    [rightItemButton addTarget:self action:@selector(presentRightMenuViewController:) forControlEvents:UIControlEventTouchDown];
+    rightItemButton.backgroundColor = [UIColor grayColor];
+    UIBarButtonItem *rightBarItem = [[UIBarButtonItem alloc]initWithCustomView:rightItemButton];
+    
+    self.navigationItem.leftItemsSupplementBackButton = YES;
+    self.navigationItem.leftBarButtonItems = @[fixedItem, leftBarItem];
+    self.navigationItem.rightBarButtonItems = @[fixedItem, rightBarItem];
+    
+
+}
 
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
     
-    [self.searchView resignFirstResponder];
-    
+//    [self.searchView resignFirstResponder];
+    NSLog(@"%s",__func__);
+
     
 }
 
-
-#pragma -
-#pragma mark LazyInitilization
+#pragma mark -
+#pragma mark Lazy-Initilization
 - (NSArray *)spannotations {
     
     if (!_spannotations) {
@@ -141,10 +172,15 @@ CGFloat const keyboardDuration = .250000;
     if (_tableView == nil) {
         
 //        _tableView = [
-        _tableView = (UITableView *) [[[NSBundle mainBundle] loadNibNamed:@"SPArrangeTableView" owner:nil options:0] lastObject];
-        [_tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"ArrangeCell"];
+
+        _tableView = [[UITableView alloc]initWithFrame:self.ContainerView.frame style:UITableViewStylePlain];
+//        [_tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"ArrangeCell"];
+        UINib *cellNib = [UINib nibWithNibName:@"SPArrangCell_iphone" bundle:nil];
+        [_tableView registerNib:cellNib forCellReuseIdentifier:@"ArrangeCell"];
+        
         _tableView.delegate = self;
         _tableView.dataSource = self;
+        _tableView.rowHeight = 80.0;
         
     }
     
@@ -269,10 +305,12 @@ CGFloat const keyboardDuration = .250000;
     
     [self.mapView mas_makeConstraints:^(MASConstraintMaker *make) {
         
-        //        make.right.mas_equalTo(weak_self.ContainerView);
-        make.size.mas_equalTo(weak_self.ContainerView.bounds.size);
+//        make.size.width.mas_equalTo(weak_self.ContainerView.bounds.size.width);
+        make.trailing.equalTo(weak_self.ContainerView).with.offset(0);
         make.leading.equalTo(weak_self.ContainerView).with.offset(0);
         make.bottom.equalTo(weak_self.ContainerView).with.offset(0);
+        make.top.equalTo(weak_self.ContainerView).with.offset(0);
+        
         
     }];
 
@@ -403,18 +441,25 @@ CGFloat const keyboardDuration = .250000;
 #pragma mark TableViewDelegate & DateSourceDelegate
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     
-    return 50;
+    return 10;
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString *identifier = @"ArrangeCell";
-
+    
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier forIndexPath:indexPath];
     
     return cell;
     
 }
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    [self.tableView deselectRowAtIndexPath:indexPath animated:NO];
+    
+}
+
 #pragma mark -
 #pragma mark TextFieldDelegate
 -(BOOL)textFieldShouldBeginEditing:(UITextField *)textField {

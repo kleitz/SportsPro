@@ -6,3 +6,5 @@ pod 'NYSegmentedControl', '~> 1.0.5'
 pod 'AMap2DMap' #2D地图SDK
 pod 'AMapSearch' #搜索服务SDK
 pod 'Masonry', '~> 0.6.1'
+pod 'MJRefresh', '~> 2.0.1'
+
